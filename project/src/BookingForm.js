@@ -1,5 +1,6 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ConfirmedBooking from "./ConfirmedBooking";
 function BookingForm(){
 
 const [date, setDate] = useState("");
@@ -14,11 +15,37 @@ const [availableTime, setAvailableTime]= useState([
     "21:00",
     "22:00",
 ])
-  
+//const {submitHandler} = useForm();
+//const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({date,time, guest, occasion})
+    console.log({date,time, guest, occasion});
+        
+
+        
+
+
+   
+   
+
+    
   }
+
+  const initializeTimes= () =>{
+
+   const data= fetch("./availableTime.json")
+    .then(response => response.json())
+    .then(data => {setAvailableTime(data.data);
+    console.log(data.data);
+    })
+    .catch(error => console.log(error));
+ console.log(data)
+  }
+
+  useEffect(()=> {
+    initializeTimes();
+  }, [])
+
   return(
 <form style={{display: 'grid', maxWidth: '900px',  gap: '20px', paddingLeft: '272px'}}>
    <label htmlFor="res-date">Choose date</label>

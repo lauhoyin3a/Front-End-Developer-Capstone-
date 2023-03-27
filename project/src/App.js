@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import Footer from './Footer';
 import homeLogo from'./icons_assets/Logo.svg';
 import { Route, Routes } from 'react-router-dom';
+import ConfirmedBooking from './ConfirmedBooking';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 <Routes> 
     <Route path="/" element={<HomePage/>}></Route>
     <Route path="/BookingPage" element={<BookingPage/>}></Route>
+    <Route path="/ConfirmedBooking" element={<ConfirmedBooking/>}></Route>
 </Routes>
 </main>
 

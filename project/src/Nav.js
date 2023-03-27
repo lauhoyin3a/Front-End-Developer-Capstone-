@@ -2,7 +2,7 @@ function Nav(){
 
     return (
         <nav>
-<ul class="flex-container">
+<ul className="flex-container">
 
 <li>
    <a href="/home">Home</a>

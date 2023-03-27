@@ -29,7 +29,7 @@ function HomePage(){
             </a>
         </div>
         <div className='container'>
-        <div class="column">
+        <div className="column">
             <img src={greek} alt="greek salad"/>
             <div className="text">
             <h5>Greek salad</h5>
@@ -37,7 +37,7 @@ function HomePage(){
             <p>Order a delivery</p>
             </div>
             </div>
-  <div class="column">          
+  <div className="column">          
    <img src={greek} alt="greek salad"/>
    <div className="text">
             <h5>Greek salad</h5>
@@ -45,7 +45,7 @@ function HomePage(){
             <p>Order a delivery</p>
             </div>
             </div>
-  <div class="column"> 
+  <div className="column"> 
   <img src={greek} alt="greek salad"/>
   <div className="text">
             <h5>Lemon Dessert </h5>
