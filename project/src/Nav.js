@@ -2,25 +2,25 @@ function Nav(){
 
     return (
         <nav>
-<ul>
+<ul class="flex-container">
 
 <li>
-    Home
+   <a href="/home">Home</a>
 </li>
 <li>
-    About
+<a href="/about">About</a>
 </li>
 <li>
-    Menu
+    <a href="/menu">Menu</a>
 </li>
 <li>
-    Reservations
+    <a href="/BookingPage">Reservations</a>
 </li>
 <li>
-    Order Online
+    <a href="/order">Order Online</a>
 </li>
 <li>
-    Login
+<a href="/login">Login</a>
 </li>
 </ul>
         </nav>
