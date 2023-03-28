@@ -5,7 +5,7 @@ function Nav(){
 <ul className="flex-container">
 
 <li>
-   <a href="/home">Home</a>
+   <a href="/">Home</a>
 </li>
 <li>
 <a href="/about">About</a>

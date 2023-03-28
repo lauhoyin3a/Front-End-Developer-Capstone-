@@ -1,6 +1,7 @@
 import restaurantfood from './icons_assets/restauranfood.jpg'
 import greek from './icons_assets/greek salad.jpg'
-
+import bruchetta from './icons_assets/bruchetta.svg'
+import lemonDessert from './icons_assets/lemon dessert.jpg'
 function HomePage(){
 
     return (
@@ -38,15 +39,15 @@ function HomePage(){
             </div>
             </div>
   <div className="column">          
-   <img src={greek} alt="greek salad"/>
+   <img src={bruchetta} alt="bruchetta"/>
    <div className="text">
-            <h5>Greek salad</h5>
+            <h5>Bruchetta</h5>
             <p>Our Bruschetta is made from grilled bread</p>
             <p>Order a delivery</p>
             </div>
             </div>
   <div className="column"> 
-  <img src={greek} alt="greek salad"/>
+  <img src={lemonDessert} alt="Lemon Dessert"/>
   <div className="text">
             <h5>Lemon Dessert </h5>
             <p>Yummy Lemon Dessert in little lemon restaurant</p>
